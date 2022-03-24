@@ -12,12 +12,12 @@ services:
       - "80:80"
     depends_on:
       - web
-  electricityapi:
+  api:
     build: ./backend
     ports:
       - 8000:8000
-  electricityweb:
-    build: ./frontend
+  web:
+    build: ./web
     ports:
       - 3000:3000
     environment:
