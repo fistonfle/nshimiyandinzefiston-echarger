@@ -11,9 +11,9 @@ services:
     ports:
       - "80:80"
     depends_on:
-      - electricityweb
+      - web
   electricityapi:
-    build: ./nodejs-backend
+    build: ./backend
     ports:
       - 8000:8000
   electricityweb:
